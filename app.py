@@ -8,10 +8,16 @@ def calculate_discount(price, discount):
     logging.info(f"Calculating discount: price={price}, discount={discount}")
     return price - (price * discount)
 
+def calculate_tax(price, tax_rate):
+    return price + (price * tax_rate)
+
 def main():
     print("Welcome to our pricing app!")
+
     try:
-        final = calculate_discount(100, 0.1)
-        print("Final price:", final)
+        discounted_price = calculate_discount(100, 0.1)
+        final_price = calculate_tax(discounted_price, 0.05)
+        print("Final price with tax:", final_price)
     except ValueError as e:
         logging.error(f"Error: {e}")
+

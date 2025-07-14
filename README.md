@@ -1,3 +1,3 @@
 # Pricing Service
 
-This service calculates discounts for e-commerce transactions.
+This service calculates discounts and adds tax for e-commerce transactions.
