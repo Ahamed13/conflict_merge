@@ -1,16 +1,3 @@
-import logging
-
-logging.basicConfig(level=logging.INFO)
-
-def calculate_discount(price, discount):
-    if discount > 1 or discount < 0:
-        raise ValueError("Discount must be between 0 and 1")
-    logging.info(f"Calculating discount: price={price}, discount={discount}")
-    return price - (price * discount)
-
-def calculate_tax(price, tax_rate):
-    return price + (price * tax_rate)
-
 def main():
     import sys
 
