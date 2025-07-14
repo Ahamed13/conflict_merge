@@ -1,8 +1,5 @@
 def main():
-    import sys
-    if len(sys.argv) != 4:
-        print("Usage: python app.py <price> <discount> <tax_rate>")
-        return
+    print("Welcome to our pricing app!")
     try:
         price = float(sys.argv[1])
         discount = float(sys.argv[2])
